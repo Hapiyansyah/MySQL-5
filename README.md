@@ -4,19 +4,19 @@
 
 - Lakukan join table mahasiswa dan dosen
 
-1
+![L1](foto/L1.png)
 
 - Lakukan join table matakuliah dan dosen
 
-2
+![L2](foto/L2.png)
 
 - Lakukan join table jadwalmengajar, dosen dan matakuliah
 
-3
+![P32L3](foto/P32L3.png)
 
 - Lakukan join table krsmahasiswa, mahasiswa, matakuliah, dan dosen
 
-4
+![L4](foto/L4.png)
 
 ## Script SQL berdasarkan perintah dibawah ini !!!
 
@@ -26,7 +26,7 @@
 -> FROM mahasiswa 
 -> JOIN dosen ON dosen.kd_ds = mahasiswa.kd_ds;`
 
-a
+![P1](foto/P1.png)
 
 2. LEFT JOIN table mahasiswa dan dosen
 
@@ -34,7 +34,7 @@ a
 -> FROM mahasiswa
 -> LEFT JOIN dosen ON dosen.kd_ds = mahasiswa.kd_ds;`
 
-b
+![P2](foto/P2.png)
 
 3. JOIN table jadwalmengajar, dosen dan matakuliah
 
@@ -43,14 +43,14 @@ b
 -> JOIN dosen ON jadwalmengajar.kd_ds = dosen.kd_ds
 -> JOIN matakuliah ON jadwalmengajar.kd_mk = matakuliah.kd_mk;`
 
-c
+![P31](foto/P31.png)
 
 `SELECT jadwalmengajar.kd_mk, dosen.nama as nama_dosen, matakuliah.nama as nama_matakuliah, matakuliah.sks, jadwalmengajar.hari, jadwalmengajar.jam, jadwalmengajar.ruang, jadwalmengajar.ruang 
 -> FROM jadwalmengajar
 -> JOIN dosen ON jadwalmengajar.kd_ds = dosen.kd_ds
 -> JOIN matakuliah ON jadwalmengajar.kd_mk = matakuliah.kd_mk;`
 
-d
+![P32L3](foto/P32L3.png)
 
 4. JOIN table krsmahasiswa, mahasiswa, matakuliah dan dosen
 
@@ -60,4 +60,4 @@ d
 -> JOIN matakuliah ON krsmahasiswa.kd_mk = matakuliah.kd_mk
 -> JOIN dosen ON krsmahasiswa.kd_ds = dosen.kd_ds;`
 
-e
+![P4](foto/P4.png)
